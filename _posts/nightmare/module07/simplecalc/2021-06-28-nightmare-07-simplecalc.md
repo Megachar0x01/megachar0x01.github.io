@@ -9,13 +9,13 @@ categories: [Binary Exploitation, nightmare]
 
 Let's start reversing it with the main function first we see that a value is taken which is stored in the no_loops variable ( Int )  then it is used to create a loop, used as a size for allocating memory on the heap, and also use to control how much memory is to be copied from  heap to stack  then input is taken from user to select what type of function is to be executed (1. addition, 2. subtraction, 3. multiplication, 4. division and 5. copy memory from heap to stack ) after the loop is completely free is used to free up heap memory and program exits
 
-img_cdn: https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/1.png
+<img src="https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/1.png">
 
 ##### Add function
 
 In Add function, we can see that it takes 2 input and then store it in a global variable and then check if it is greater than 39 then it will add two values and store them in a third global variable, and then the exit function and if it is smaller than 39 than prints a msg and exit without doing anything
 
-img_cdn: https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/2.png
+<img src="https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/2.png">
 
 
 Rest of the function doing as the name suggests sub,mul, and divide but with the same restrictions as add function (check the value if its greater than 39)
@@ -27,7 +27,7 @@ The first vuln I can find is that the stack has limited space ( 40 bytes ) and t
 
 **no_loops is controlled by user**
 
-img_cdn: https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/3.png
+<img src="https://github.com/Megachar0x01/megachar0x01.github.io/blob/main/commons/writeup2/3.png">
 
 
 Now its time to fill the heap with values like its stack (because it will be placed on the stack ) for that we see that after the calculation function ( add, sub, mul, div) we can see that the global value is placed on the heap every time on a different address (because of for_loop multiplying by the address which is incrementing the address value )
