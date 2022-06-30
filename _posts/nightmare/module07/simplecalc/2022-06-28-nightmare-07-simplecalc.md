@@ -1,7 +1,7 @@
 ---
 title: Nigtmare (module 7 simplecalc)
 author: megachar0x01
-date: 2021-06-28
+date: 2022-06-28
 categories: [Binary Exploitation, nightmare]
 
 ---
