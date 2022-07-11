@@ -131,5 +131,4 @@ io.sendlineafter(b"=>",b"5")
 io.interactive()
 ```
 
-
 [![asciicast](https://asciinema.org/a/504622.svg)](https://asciinema.org/a/504622)
