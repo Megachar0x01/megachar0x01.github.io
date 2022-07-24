@@ -2,7 +2,7 @@
 title: Facebook CTF 2019 Overfloat
 author: megachar0x01
 date: 2022-07-11
-categories: [Binary Exploitation, nightmare, module08]
+categories: [Pwn, amd64, Binary Exploitation, nightmare, module08]
 ---
 
 ### Purpose : Get shell on system 
