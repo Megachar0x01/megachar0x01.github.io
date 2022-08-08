@@ -10,7 +10,7 @@ categories: [Pwn, i386, ctf]
 
 ---
 
-### Purpose : Get The Flag
+### Purpose : Get Shell
 
 
 
