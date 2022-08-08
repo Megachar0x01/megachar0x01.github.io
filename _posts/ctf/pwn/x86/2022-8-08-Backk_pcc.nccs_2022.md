@@ -11,7 +11,7 @@ categories: [Pwn, i386, ctf]
 ---
 
 ### Purpose : Get Shell
-
+[![asciicast](https://asciinema.org/a/513325.svg)](https://asciinema.org/a/513325)
 
 
 Checking binary security measures.
@@ -205,3 +205,5 @@ shell()
 io.interactive()
 
 ```
+
+
