@@ -1,5 +1,5 @@
 ---
-title: Encryptor hackathon lhr Qualifier 2022
+title: Little Hero Khi Qualifier 2022
 author: megachar0x01
 date: 2022-12-02
 categories: [Reversing, Dotnet, ctf]
