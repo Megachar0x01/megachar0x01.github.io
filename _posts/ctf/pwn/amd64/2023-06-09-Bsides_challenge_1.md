@@ -1,12 +1,20 @@
-**Title: Exploiting Seccomp-Restricted Program to Leak a Secret**
+---
+title: Exploiting Seccomp-Restricted Program to Leak a Flag
+author: megachar0x01
+date: 2022-10-28
+categories: [Pwn, amd64, ctf]
+---
+
+### Purpose : Get The Flag
+
 
 **Introduction:** The purpose of this write-up is to explain the process of exploiting a seccomp-restricted program to leak a secret. Seccomp is a mechanism in Linux that restricts the system calls a program can make, providing an additional layer of security. The code provided demonstrates the use of seccomp to restrict the program to only two syscalls: `read` and `exit_group`. By leveraging these restrictions and reading one byte at a time, we can gradually leak the secret stored in the program's memory.
 
 **Exploit Strategy:** To exploit the vulnerability, we need to leak the secret byte by byte. Since the program restricts the syscalls to `read` and `exit_group`, we cannot directly leak the secret using the `printf` function or other standard output methods. Instead, we can use the `exit_group` syscall to read the secret directly from memory. By continuously invoking the `exit_group` syscall with a  secret variable  pointer as first argument which  leaked one byte  with exit code that consists of byte in numeric form on every prgram exit , we can gradually leak the secret on .
 
-<img src="https://imgur.com/ecAztLc" alt="img_1">
+<img src="https://i.imgur.com/ecAztLc.png" alt="img_1">
 
-<img src="https://imgur.com/IEJkw96" alt="img_1">
+<img src="https://i.imgur.com/IEJkw96.png" alt="img_1">
 
 ## Vuln Code
 ```c
