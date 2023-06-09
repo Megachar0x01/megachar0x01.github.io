@@ -1,7 +1,7 @@
 ---
 title: Exploiting Seccomp-Restricted Program to Leak a Flag
 author: megachar0x01
-date: 2022-10-28
+date: 2023-06-09
 categories: [Pwn, amd64, ctf]
 ---
 
