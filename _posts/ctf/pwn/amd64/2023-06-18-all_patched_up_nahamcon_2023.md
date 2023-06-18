@@ -17,6 +17,7 @@ categories: [Pwn, amd64, ctf]
 
 
 ## Exploit 
+
 ```python
 #!/usr/bin/python3
 from pwn import *
