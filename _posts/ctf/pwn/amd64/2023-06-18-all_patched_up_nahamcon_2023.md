@@ -1,8 +1,10 @@
 ---
+
 title: All Patched Up: Unleashing the ROP Chain and Hijacking the GOT _ NahamCon 2023
 author: megachar0x01
 date: 2023-06-18
 categories: [Pwn, amd64, ctf]
+
 ---
 
 ### Purpose : Get The Flag
