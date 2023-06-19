@@ -18,7 +18,7 @@ The attack strategy involves leaking values from the stack by inspecting it. By 
 
 In the subsequent buffer overflow, we overwrite the base pointer (RBP) with a Global Offset Table (GOT) address and the return instruction pointer (RIP) with the address of the main function plus an offset of 112. This enables us to leak the contents of the GOT, revealing addresses of functions in the libc library. We can then utilize the libc address plus the 0x10a2fc onegadget offset to gain a shell.
 
-Note: The provided information is for educational purposes only. Exploitation of vulnerabilities should only be performed in authorized environments and with appropriate permissions.
+
 
 ## Protections: 
 
