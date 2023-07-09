@@ -37,6 +37,12 @@ github:
 twitter:
   username: megachar0x01             # change to your twitter username
 
+linkedin:
+  url: 'https://www.linkedin.com/in/abdullah-shahbaz-93b3aa202'
+
+Youtube:
+  url: 'https://www.youtube.com/@megachar0x01'
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -47,6 +53,7 @@ social:
     - https://twitter.com/megachar0x01      # change to your twitter homepage
     - https://github.com/Megachar0x01
     - https://www.linkedin.com/in/abdullah-shahbaz-93b3aa202
+    
 
 google_site_verification:               # fill in to your verification string
 
