@@ -23,7 +23,7 @@ timezone: Asia/Shanghai
 
 title: Megachar0x01                          # the main title
 
-tagline: A Cyber Security Enthusiast | CTF Player | Malware Analyst | Aspiring for pwnmaster (pwn2own winner)   # it will display as the sub-title
+tagline: A Cyber Security Enthusiast | CTF Player | Malware Analyst | Aspiring for pwnmaster    # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Blogs on CTF , Malware Analysis & Binary exploitation
@@ -41,7 +41,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Abdullah Shahbaz
-  email: megachar0x01@proton.me             #  change to your email address
+  email: abdullahshahbaz@proton.me             #  change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/megachar0x01      # change to your twitter homepage
