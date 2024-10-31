@@ -1,5 +1,5 @@
 ---
-title: Single Node - Ignite khi qualifying 2024
+title: Single Note - Ignite khi qualifying 2024
 author: megachar0x01
 date: 2024-10-30
 categories: [Pwn, amd64, ctf]
